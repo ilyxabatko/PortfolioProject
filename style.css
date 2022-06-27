@@ -3,13 +3,79 @@ html, body {
     margin: 0;
     font-family: "Andada-Pro", serif;
     height: 100%;
-    max-width: 1000px;
+}
+
+body {
+    background-color: blanchedalmond;
     display: flex;
-    flex-direction: columns;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 900px;
 }
 
 /* Top header */
 
 header {
     align-items: center;
+    width: 100%;
+}
+
+header nav {
+    display: flex; 
+    width: 100%;
+    align-items: center;
+}
+
+header nav ol {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 500px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    color: goldenrod;
+}
+
+nav li #mystery-button {
+    color: red;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+}
+
+section .about-me-container {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-text-container {
+    padding-right: 20px;
+}
+
+.about-me-container .portrait {
+    height: 15rem;
+    width: 25rem;
+}
+
+.projects details {
+    display: block;
+}
+
+.project-title h3 {
+    display: inline;
 }
